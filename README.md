@@ -19,7 +19,7 @@ This is a frontend-only clone of the Amazon homepage, built using **HTML** and *
 
 ## 📸 Screenshot
 
-![Amazon Clone Screenshot](./screenshot.png)
+![Amazon Clone Screenshot](Screenshot-of-Project.png)
 
 ---
 
