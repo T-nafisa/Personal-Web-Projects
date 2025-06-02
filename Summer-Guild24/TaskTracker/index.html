@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Tracker</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="https://media.istockphoto.com/id/1489907005/vector/the-girl-is-working-on-a-checklist.jpg?s=1024x1024&w=is&k=20&c=aZ0qulfnW-9eT3ROlg-vfecP69eN9ynBmPNFxKVVQ5w="
+            alt="Task Tracker Logo" class="logo">
+        <h1>Task Tracker</h1>
+        <form id="taskForm">
+            <label for="taskName">Task name:</label><br>
+            <input type="text" id="taskName" name="taskName"><br>
+            <label for="taskDescription">Description:</label><br>
+            <textarea id="taskDescription" name="taskDescription"></textarea><br><br>
+            <label for="taskDeadline">Task deadline:</label><br>
+            <input type="date" id="taskDeadline" name="taskDeadline"><br>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Description</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Task rows will be rendered here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    /* Plain background color */
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-header {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero-content img {
+    width: 100%;
+    max-width: 400px;
+    /* Control the size of the image */
+    border-radius: 10px;
+    /* Optional: add rounded corners to the image */
+    margin-bottom: 20px;
+    /* Space between the image and the text */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #ff4081;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e60073;
+}
+
+/* Products Section */
+.products {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #777;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contact-address,
+.contact-phone,
+.contact-email {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e60073;
+}
