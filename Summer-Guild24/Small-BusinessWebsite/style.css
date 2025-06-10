@@ -74,6 +74,13 @@ body {
 }
 
 /* Products Section */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
 .products {
     padding: 50px;
     background-color: #fff;
@@ -121,24 +128,31 @@ body {
 }
 
 /* Contact Section */
-.contact {
-    padding: 50px;
-    background-color: #333;
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #3f3e3e;
     color: #fff;
-    text-align: center;
+    border-radius: 10px;
+    text-align: left;
 }
 
 .contact-title {
     font-size: 32px;
     margin-bottom: 20px;
-    color: black;
+    color: #ff4081;
 }
 
-.contact-address,
-.contact-phone,
-.contact-email {
+.contact-info p {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin: 8px 0;
+}
+
+.contact-info a {
+    color: #da3069;
+    text-decoration: none;
 }
 
 .contact-form {
