@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rock Paper Scissors Game</title>
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<main class="game-wrapper">
+
+    <section class="hero-section">
+        <h1>Rock Paper Scissors</h1>
+        <p class="subtitle">Choose your move and try to beat the computer. First to 5 wins the match.</p>
+    </section>
+
+    <section class="match-panel">
+        <div class="pick-box">
+            <p class="pick-label"><i class="bi bi-person-circle"></i> You Picked</p>
+            <div class="pick-display" id="user-pick">?</div>
+        </div>
+
+        <div class="result-box">
+            <p id="round-text">Round 1</p>
+            <div class="vs-circle">VS</div>
+            <p id="msg">Choose rock, paper, or scissors to begin.</p>
+        </div>
+
+        <div class="pick-box">
+            <p class="pick-label"><i class="bi bi-pc-display"></i> Computer Picked</p>
+            <div class="pick-display" id="comp-pick">?</div>
+        </div>
+    </section>
+
+    <section class="choices">
+        <button class="choice" id="rock" data-choice="rock">
+            <img src="./images/rock.png" alt="Rock">
+            <span>Rock</span>
+        </button>
+
+        <button class="choice" id="paper" data-choice="paper">
+            <img src="./images/paper.png" alt="Paper">
+            <span>Paper</span>
+        </button>
+
+        <button class="choice" id="scissors" data-choice="scissors">
+            <img src="./images/scissors.png" alt="Scissors">
+            <span>Scissors</span>
+        </button>
+    </section>
+
+    <section class="score-board">
+        <div class="score-card">
+            <p id="user-score">0</p>
+            <span>You</span>
+        </div>
+
+        <div class="score-card">
+            <p id="draw-score">0</p>
+            <span>Draws</span>
+        </div>
+
+        <div class="score-card">
+            <p id="comp-score">0</p>
+            <span>Computer</span>
+        </div>
+    </section>
+
+    <section class="extra-info">
+        <div class="info-card">
+            <span><i class="bi bi-lightning-charge"></i> Current Streak</span>
+            <strong id="streak">0</strong>
+        </div>
+
+        <div class="info-card">
+            <span><i class="bi bi-trophy"></i> Best Streak</span>
+            <strong id="best-streak">0</strong>
+        </div>
+    </section>
+
+    <section class="history-section">
+        <div class="history-top">
+            <h2>Round History</h2>
+            <button id="reset-btn">
+                <i class="bi bi-arrow-clockwise"></i>
+                Reset Game
+            </button>
+        </div>
+
+        <ul id="history-list">
+            <li>No rounds played yet.</li>
+        </ul>
+    </section>
+
+    <p class="keyboard-note">
+        <i class="bi bi-keyboard"></i>
+        Shortcut keys: Press R for Rock, P for Paper, S for Scissors.
+    </p>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
